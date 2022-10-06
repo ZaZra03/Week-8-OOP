@@ -37,12 +37,18 @@ public class Main {
 						objBasicPhone.CheckBalance();
 						break;
 					case 3:
-						System.out.print("Enter the number of reciever: ");
-						String receiver = in.readLine();
-						System.out.print("Enter your message to: " + receiver + "\n");
-						String message = in.readLine();
-						objBasicPhone.Text(receiver, message);
-						break;
+						try {
+							System.out.print("Enter the number of reciever: ");
+							int receiver = Integer.parseInt(in.readLine());
+							System.out.print("Enter your message to: " + receiver + "\n");
+							String message = in.readLine();
+							objBasicPhone.Text(receiver, message);
+							break;
+								
+						} catch (Exception e) {
+							System.out.println("Invalid input! Try again.");
+						}
+						
 					case 4: 
 					case 5: 
 					case 6: 
