@@ -66,6 +66,6 @@ public class BasicPhone {
 	}
 	
 	public void Shutdown(){
-		System.extit(0);
+		System.exit(0);
 	}	
 }
