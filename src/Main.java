@@ -40,6 +40,20 @@ public class Main {
 						String message = in.readLine();
 						objBasicPhone.Text(receiver, message);
 					case 3: // Call
+						while(true) {
+							try {
+								System.out.print("Enter the number which you would want to call: ");
+								int number = Integer.parseInt(in.readLine());
+								System.out.print("Enter the amount of time in seconds you would like to call: ");
+								int callLength = Integer.parseInt(in.readLine());
+								objBasicPhone.Call(String.valueOf(number), callLength);
+								break;
+							} catch (Exception e) {
+								// TODO: handle exception
+								System.out.println("Invalid input! Try again. ");
+							}
+						}
+						break;
 					case 4: // Change Number
 					case 5: // Shut Down Phone
 						System.out.println("Shutting Down");
