@@ -9,7 +9,8 @@ public class Main {
 		String manufacturer;
 		String model;
 		String sim;
-
+		
+		//commit example
 		System.out.print("Enter your phone manufacturer: ");
 		manufacturer = in.readLine();
 		System.out.print("\nEnter your phone model: ");
