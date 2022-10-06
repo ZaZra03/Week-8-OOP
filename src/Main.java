@@ -1,8 +1,25 @@
+/**
+ * This program implements A basic phone is a device which allows a 
+ * user to communicate though calls and text.
+ * 
+ * @class Main
+ * 
+ * @author Group Five Pogi
+ * 
+ */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
+	
+	/** 
+	 * This is the main method which makes use of isPrime method.
+	 * @param args Unused.
+	 * @throws IOException If an input or output exception occurred.
+	 * @return Nothing.
+	 */
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
