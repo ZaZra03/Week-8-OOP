@@ -86,7 +86,19 @@ public class Main {
 							}
 						}
 						break;
-					case 5: 
+					case 5:
+						while(true) {
+							try {
+								System.out.println("Enter new number: ");
+								int newNumber = Integer.parseInt(in.readLine());
+								ChangeNumber(String.valueOf(newNumber));
+								break;
+								
+							} catch (Exception e) {
+								System.out.println("Invalid input! Try again.");
+							}
+						}
+						
 					case 6: 
 						objBasicPhone.DisplayInformation();
 						break;
