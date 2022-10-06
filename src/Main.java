@@ -86,6 +86,8 @@ public class Main {
 						break;
 					case 5: 
 					case 6: 
+						objBasicPhone.Shutdown();
+						break;
 				}
 			} catch (Exception e) {
 				System.out.println("Error");
