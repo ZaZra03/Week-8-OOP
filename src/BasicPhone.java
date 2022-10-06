@@ -24,11 +24,11 @@ public class BasicPhone {
 		
 	}
 
-	public void CallNumber() {
+	public void Call() {
 
 	}
 
-	public void TextNumber() {
+	public void Text() {
 
 	}
 	
