@@ -31,6 +31,10 @@ public class BasicPhone {
 	public void TextNumber() {
 
 	}
+	
+	public void ChangeNumber(String newNumber) {
+
+	}
 
 	public void DisplayInformation() {
 		System.out.println("MANUFACTURER: " + this.manufacturer);
