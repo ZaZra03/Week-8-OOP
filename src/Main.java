@@ -32,11 +32,11 @@ public class Main {
 				System.out.print("Enter Operation: ");
 				operation = Integer.parseInt(in.readLine());
 				switch (operation) {
-					case 1:
-					case 2:
-					case 3:
-					case 4:
-					case 5:
+					case 1: // Buy Load
+					case 2: // Text
+					case 3: // Call
+					case 4: // Change Number
+					case 5: // Shut Down Phone
 				}
 			} catch (Exception e) {
 				System.out.println("Error");
