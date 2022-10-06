@@ -47,7 +47,8 @@ public class Main {
 				System.out.println("[3] Text");
 				System.out.println("[4] Call");
 				System.out.println("[5] Change Number");
-				System.out.println("[6] Shut Down Phone\n");
+				System.out.println("[6] Display Informationn");
+				System.out.println("[7] Shut Down Phone\n");
 				System.out.print("Enter Operation: ");
 				operation = Integer.parseInt(in.readLine());
 				switch (operation) {
