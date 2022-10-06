@@ -4,28 +4,13 @@ public class BasicPhone {
 	private String simNumber;
 	private double loadBalance;
 
-	public String getManufacturer() {
-		return this.manufacturer;
-	}
-
-	public String getModel() {
-		return this.model;
-	}
-
-	public String getSimNumber() {
-		return this.simNumber;
-	}
-
-	public void setManufacturer(String manufacturer) {
-		this.manufacturer = manufacturer;
-	}
-
-	public void setModel(String model) {
-		this.model = model;
-	}
-
+	
 	public void setSimNumber(String simNumber) {
 		this.simNumber = simNumber;
+	}
+	
+	public String getSimNumber() {
+		return this.simNumber;
 	}
 
 	public BasicPhone(String manufacturer, String model, String simNumber) {
@@ -33,7 +18,6 @@ public class BasicPhone {
 		this.model = model;
 		this.simNumber = simNumber;
 		this.loadBalance = 0;
-
 	}
 	
 	public void BuyLoad(double amount) {
