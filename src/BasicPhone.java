@@ -27,8 +27,7 @@ public class BasicPhone {
 	public void CheckBalance(){
 		
 	}
-	public void Shutdown(){
-		System.exit(0);	
+	
 	public void Call(String simNumber, int seconds) {
 		int cost = (5*(Math.round(seconds/60)));
 		double remainingBalance = this.loadBalance - cost;
