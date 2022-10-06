@@ -34,14 +34,18 @@ public class Main {
 				switch (operation) {
 					case 1: // Buy Load
 					case 2:
+						objBasicPhone.CheckBalance();
+						break;
+					case 3:
 						System.out.print("Enter the number of reciever: ");
 						String receiver = in.readLine();
 						System.out.print("Enter your message to: " + receiver + "\n");
 						String message = in.readLine();
 						objBasicPhone.Text(receiver, message);
-					case 3: // Call
-					case 4: // Change Number
-					case 5: // Shut Down Phone
+						break;
+					case 4: 
+					case 5: 
+					case 6: 
 				}
 			} catch (Exception e) {
 				System.out.println("Error");
