@@ -57,6 +57,7 @@ public class Main {
 						break;
 						
 					case 3:
+						while(true) {
 							try {
 								System.out.print("Enter the number of reciever: ");
 								int receiver = Integer.parseInt(in.readLine());
@@ -68,6 +69,7 @@ public class Main {
 							} catch (Exception e) {
 								System.out.println("Invalid input! Try again.");
 							}
+						}
 							
 					case 4: 
 						while(true) {
