@@ -33,8 +33,8 @@ public class BasicPhone {
 	}
 
 	public void DisplayInformation() {
-		System.out.println("MANUFACTURER: " + this.getManufacturer());
-		System.out.println("MODEL : " + this.getModel());
-		System.out.println("SIM NUMBER : " + this.getSimNumber());
+		System.out.println("MANUFACTURER: " + this.manufacturer);
+		System.out.println("MODEL : " + this.model);
+		System.out.println("SIM NUMBER : " + this.simNumber);
 	}
 }
