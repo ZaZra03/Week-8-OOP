@@ -24,8 +24,16 @@ public class BasicPhone {
 		
 	}
 
-	public void Call() {
-
+	public void Call(String simNumber, int seconds) {
+		int cost = (5*(Math.round(seconds/60)));
+		double remainingBalance = this.loadBalance - cost;
+		if(remainingBalance >=0) {
+			String minute = String.format("%02d", Math.floor(seconds/60));
+			String second = String.format("%02d", seconds-((Math.floor(seconds/60)*60)));
+			System.out.println("You called "+simNumber+" for "+ minute+":"+second+". ");
+		}else {
+			System.out.println("Insufficient balance!\nPlease try again.");
+		}
 	}
 
 	public void Text() {
