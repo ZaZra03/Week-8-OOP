@@ -62,4 +62,8 @@ public class BasicPhone {
 		System.out.println("MODEL : " + this.model);
 		System.out.println("SIM NUMBER : " + this.simNumber);
 	}
+	
+	public void Shutdown(){
+		System.extit(0);
+	}	
 }
