@@ -33,6 +33,7 @@ public class BasicPhone {
 			String minute = String.format("%02d", Math.floor(seconds/60));
 			String second = String.format("%02d", seconds-((Math.floor(seconds/60)*60)));
 			System.out.println("You called "+simNumber+" for "+ minute+":"+second+". ");
+			this.loadBalance = this.loadBalance - cost;
 		}else {
 			System.out.println("Insufficient balance!\nPlease try again.");
 		}
