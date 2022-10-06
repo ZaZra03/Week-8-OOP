@@ -33,7 +33,12 @@ public class Main {
 				operation = Integer.parseInt(in.readLine());
 				switch (operation) {
 					case 1: // Buy Load
-					case 2: // Text
+					case 2:
+						System.out.print("Enter the number of reciever: ");
+						String receiver = in.readLine();
+						System.out.print("Enter your message to: " + receiver + "\n");
+						String message = in.readLine();
+						objBasicPhone.Text(receiver, message);
 					case 3: // Call
 					case 4: // Change Number
 					case 5: // Shut Down Phone
