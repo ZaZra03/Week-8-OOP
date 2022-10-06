@@ -36,8 +36,11 @@ public class BasicPhone {
 		}
 	}
 
-	public void Text() {
-
+	public void Text(String receiverNumber, String message) {
+		double textCost = 0.01 * message.length();
+		this.loadBalance = this.loadBalance - textCost;
+		System.out.println("\nMessage to: " + receiverNumber + "\n" + message + "\n" + "\nMessage amount: " + textCost);
+		System.out.println();
 	}
 	
 	public void ChangeNumber(String newNumber) {
