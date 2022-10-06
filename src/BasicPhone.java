@@ -25,7 +25,7 @@ public class BasicPhone {
 		System.out.println("Load bought successfully.");
 	}
 	public void CheckBalance(){
-		
+		System.out.println("Balance: " + this.loadBalance);
 	}
 	
 	public void Call(String simNumber, int seconds) {
