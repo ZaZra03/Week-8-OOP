@@ -31,8 +31,15 @@ public class Main {
 				System.out.println("[5] Shut Down Phone\n");
 				System.out.print("Enter Operation: ");
 				operation = Integer.parseInt(in.readLine());
+				switch (operation) {
+					case 1:
+					case 2:
+					case 3:
+					case 4:
+					case 5:
+				}
 			} catch (Exception e) {
-
+				System.out.println("Error");
 			}
 
 		}
