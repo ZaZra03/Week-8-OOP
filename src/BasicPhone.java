@@ -66,6 +66,7 @@ public class BasicPhone {
 	}
 	
 	public void Shutdown(){
+		Sytem.out.println("Phone is shutting down.);
 		System.exit(0);
 	}	
 }
