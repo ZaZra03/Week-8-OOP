@@ -23,7 +23,9 @@ public class BasicPhone {
 	public void BuyLoad(double amount) {
 		
 	}
-
+	public void CheckBalance(){
+		
+	}	
 	public void Call(String simNumber, int seconds) {
 		int cost = (5*(Math.round(seconds/60)));
 		double remainingBalance = this.loadBalance - cost;
