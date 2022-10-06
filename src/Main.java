@@ -89,6 +89,7 @@ public class Main {
 					case 5: 
 					case 6: 
 						objBasicPhone.DisplayInformation();
+						break;
 					case 7:
 						objBasicPhone.Shutdown();
 						break;
