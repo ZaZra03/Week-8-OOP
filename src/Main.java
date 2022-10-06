@@ -9,8 +9,8 @@ public class Main {
 		String manufacturer;
 		String model;
 		String sim;
-		
-		//commit example
+
+		// commit example
 		System.out.print("Enter your phone manufacturer: ");
 		manufacturer = in.readLine();
 		System.out.print("\nEnter your phone model: ");
@@ -34,7 +34,7 @@ public class Main {
 				System.out.print("Enter Operation: ");
 				operation = Integer.parseInt(in.readLine());
 				switch (operation) {
-					case 1: // Buy Load
+				case 1: // Buy Load
 					while (true) {
 						try {
 							System.out.print("\nEnter the amount: ");
@@ -44,68 +44,67 @@ public class Main {
 								objBasicPhone.DisplayInformation();
 								break;
 							} else {
-								System.out.println("\nError. Less than zero amount.");
+								System.out.println("\nError. Amount cannot be zero or negative.");
 							}
 						} catch (Exception e) {
-						System.out.println("\nError. Please try again.");
+							System.out.println("\nError. Please input valid characters.");
 						}
 					}
 					break;
-					case 2:
-						objBasicPhone.CheckBalance();
-						break;
-					case 3:
-						while(true) {
-							try {
-								System.out.print("Enter the number of reciever: ");
-								int receiver = Integer.parseInt(in.readLine());
-								System.out.print("Enter your message to: " + receiver + "\n");
-								String message = in.readLine();
-								objBasicPhone.Text(String.valueOf(receiver), message);
-								break;
-								
-							} catch (Exception e) {
-								System.out.println("Invalid input! Try again.");
-							}
+				case 2:
+					objBasicPhone.CheckBalance();
+					break;
+				case 3:
+					while (true) {
+						try {
+							System.out.print("Enter the number of reciever: ");
+							int receiver = Integer.parseInt(in.readLine());
+							System.out.print("Enter your message to: " + receiver + "\n");
+							String message = in.readLine();
+							objBasicPhone.Text(String.valueOf(receiver), message);
+							break;
+
+						} catch (Exception e) {
+							System.out.println("\nError. Please input valid characters.");
 						}
-						break;	
-					case 4: 
-						while(true) {
-							try {
-								System.out.print("Enter the number which you would want to call: ");
-								int number = Integer.parseInt(in.readLine());
-								System.out.print("Enter the amount of time in seconds you would like to call: ");
-								int callLength = Integer.parseInt(in.readLine());
-								objBasicPhone.Call(String.valueOf(number), callLength);
-								break;
-							} catch (Exception e) {
-								// TODO: handle exception
-								System.out.println("Invalid input! Try again. ");
-							}
+					}
+					break;
+				case 4:
+					while (true) {
+						try {
+							System.out.print("Enter the number which you would want to call: ");
+							int number = Integer.parseInt(in.readLine());
+							System.out.print("Enter the amount of time in seconds you would like to call: ");
+							int callLength = Integer.parseInt(in.readLine());
+							objBasicPhone.Call(String.valueOf(number), callLength);
+							break;
+						} catch (Exception e) {
+							System.out.println("\nError. Please input valid characters.");
 						}
-						break;
-					case 5:
-						while(true) {
-							try {
-								System.out.println("Enter new number: ");
-								int newNumber = Integer.parseInt(in.readLine());
-								objBasicPhone.ChangeNumber(String.valueOf(newNumber));
-								break;
-								
-							} catch (Exception e) {
-								System.out.println("Invalid input! Try again.");
-							}
+					}
+					break;
+				case 5:
+					while (true) {
+						try {
+							System.out.println("Enter new number: ");
+							int newNumber = Integer.parseInt(in.readLine());
+							objBasicPhone.ChangeNumber(String.valueOf(newNumber));
+							break;
+
+						} catch (Exception e) {
+							System.out.println("\nError. Please input valid characters.");
 						}
-						break;
-					case 6: 
-						objBasicPhone.DisplayInformation();
-						break;
-					case 7:
-						objBasicPhone.Shutdown();
-						break;
+					}
+					break;
+				case 6:
+					objBasicPhone.DisplayInformation();
+					break;
+				case 7:
+					objBasicPhone.Shutdown();
+					break;
 				}
 			} catch (Exception e) {
-				System.out.println("Error");
+				System.out.println("\nError. Please input valid characters.");
 			}
 
 		}
