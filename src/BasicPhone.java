@@ -22,6 +22,7 @@ public class BasicPhone {
 	
 	public void BuyLoad(double amount) {
 		this.loadBalance += amount;
+		System.out.println("Load bought successfully.");
 	}
 	public void CheckBalance(){
 		
@@ -66,7 +67,6 @@ public class BasicPhone {
 	}
 	
 	public void Shutdown(){
-		Sytem.out.println("Phone is shutting down.);
 		System.exit(0);
 	}	
 }
