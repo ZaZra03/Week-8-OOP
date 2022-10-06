@@ -50,12 +50,10 @@ public class Main {
 						System.out.println("\nError. Please try again.");
 						}
 					}
-
-						
+					break;
 					case 2:
 						objBasicPhone.CheckBalance();
 						break;
-						
 					case 3:
 						while(true) {
 							try {
@@ -70,7 +68,7 @@ public class Main {
 								System.out.println("Invalid input! Try again.");
 							}
 						}
-							
+						break;	
 					case 4: 
 						while(true) {
 							try {
@@ -91,14 +89,14 @@ public class Main {
 							try {
 								System.out.println("Enter new number: ");
 								int newNumber = Integer.parseInt(in.readLine());
-								ChangeNumber(String.valueOf(newNumber));
+								objBasicPhone.ChangeNumber(String.valueOf(newNumber));
 								break;
 								
 							} catch (Exception e) {
 								System.out.println("Invalid input! Try again.");
 							}
 						}
-						
+						break;
 					case 6: 
 						objBasicPhone.DisplayInformation();
 						break;
