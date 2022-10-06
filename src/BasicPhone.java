@@ -33,7 +33,6 @@ public class BasicPhone {
 			String minute = String.format("%02d", Math.floor(seconds/60));
 			String second = String.format("%02d", seconds-((Math.floor(seconds/60)*60)));
 			System.out.println("You called "+simNumber+" for "+ minute+":"+second+". ");
-			this.loadBalance = this.loadBalance - cost;
 		}else {
 			System.out.println("Insufficient balance!\nPlease try again.");
 		}
@@ -41,12 +40,20 @@ public class BasicPhone {
 
 	public void Text(String receiverNumber, String message) {
 		double textCost = 0.01 * message.length();
-		this.loadBalance = this.loadBalance - textCost;
-		System.out.println("\nMessage to: " + receiverNumber + "\n" + message + "\n" + "\nMessage amount: " + textCost);
-		System.out.println();
+		if(textCost < this.loadBalance) {
+			this.loadBalance = this.loadBalance - textCost;
+			System.out.println("\nMessage to: " + receiverNumber + "\n" + message + "\n" + "\nMessage amount: " + textCost);
+			System.out.println();
+		} else
+			System.out.println("Insufficient balance.");
 	}
 	
 	public void ChangeNumber(String newNumber) {
+		if (this.simNumber == newNumber) {
+			System.out.println("Error. Same Number.");
+		} else {
+			this.simNumber = newNumber;
+		}
 
 	}
 
