@@ -21,7 +21,7 @@ public class BasicPhone {
 	}
 	
 	public void BuyLoad(double amount) {
-		
+		this.loadBalance += amount;
 	}
 	public void CheckBalance(){
 		
