@@ -34,18 +34,23 @@ public class Main {
 				System.out.print("Enter Operation: ");
 				operation = Integer.parseInt(in.readLine());
 				switch (operation) {
-					case 1:
+					case 1: // Buy Load
 					while (true) {
-						System.out.print("\nEnter the amount: ");
-						int amount = Integer.parseInt(in.readLine());
-						if (amount > 0) {
-							objBasicPhone.BuyLoad(amount);
-							objBasicPhone.DisplayInformation();
-							break;
-						} else {
-							System.out.println("\nError. Less than zero amount.");
+						try {
+							System.out.print("\nEnter the amount: ");
+							int amount = Integer.parseInt(in.readLine());
+							if (amount > 0) {
+								objBasicPhone.BuyLoad(amount);
+								objBasicPhone.DisplayInformation();
+								break;
+							} else {
+								System.out.println("\nError. Less than zero amount.");
+							}
+						} catch (Exception e) {
+						System.out.println("\nError. Please try again.");
 						}
 					}
+
 						
 					case 2:
 						objBasicPhone.CheckBalance();
